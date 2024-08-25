@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title> Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- font awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600;700;800;900&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Hind+Vadodara:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Css link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 10px;
+            /* padding-top: 100px; */
+        }
+
+        #contact {
+            width: 100%;
+            height: 100%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin: 0 auto;
+            padding: 40px 0;
+            font: 300 60px 'Oswald', sans-serif;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            max-width: 840px;
+        }
+
+        /* Left contact page */
+        .form-horizontal {
+            /*float: left;*/
+            max-width: 400px;
+            font-family: 'Lato';
+            font-weight: 400;
+        }
+
+        .form-control,
+        textarea {
+            max-width: 400px;
+            /* background-color: #000; */
+            color: black;
+            letter-spacing: 1px;
+        }
+
+        .send-button {
+            margin-top: 15px;
+            height: 34px;
+            width: 400px;
+            overflow: hidden;
+            transition: all .2s ease-in-out;
+        }
+
+        .alt-send-button {
+            width: 400px;
+            height: 34px;
+            transition: all .2s ease-in-out;
+        }
+
+        .send-text {
+            display: block;
+            margin-top: 10px;
+            font: 700 12px 'Lato', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .alt-send-button:hover {
+            transform: translate3d(0px, -29px, 0px);
+        }
+
+        /* Begin Right Contact Page */
+        .direct-contact-container {
+            max-width: 400px;
+        }
+
+        /* Location, Phone, Email Section */
+        .contact-list {
+            list-style-type: none;
+            margin-left: -180px;
+            padding-right: 40px;
+
+        }
+
+        .list-item {
+            line-height: 4;
+            color: red;
+        }
+
+        .contact-text {
+            font: 300 18px 'Lato', sans-serif;
+            letter-spacing: 1.9px;
+            /* color: #bbb; */
+            color: black;
+        }
+
+        .place {
+            margin-left: 30px;
+        }
+
+        .phone {
+            margin-left: 44px;
+        }
+
+        .gmail {
+            margin-left: 40px;
+        }
+
+        .Timing {
+            margin-left: 50px;
+        }
+
+        .contact-text a {
+
+            color: black;
+            text-decoration: none;
+            transition-duration: 0.2s;
+        }
+
+        .contact-text a:hover {
+
+            color: black;
+            text-decoration: none;
+        }
+
+
+        /* Social Media Icons */
+        .social-media-list {
+            position: relative;
+            font-size: 22px;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            margin-left: -150px
+        }
+
+        .social-media-list li a {
+            /* color: #fff; */
+            color: #000;
+        }
+
+        .social-media-list li {
+            position: relative;
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            margin: 10px 3px;
+            line-height: 60px;
+            border-radius: 50%;
+            color: #000;
+            background-color: beige;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+        }
+
+        .social-media-list li:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 50%;
+            opacity: 0.1;
+            box-shadow: 0 0 0 1px red;
+            transition: all .2s ease-in-out;
+        }
+
+        .social-media-list li:hover {
+            background-color: #000;
+            color: red;
+        }
+
+        .social-media-list li:hover:after {
+            opacity: 1;
+            transform: scale(1.12);
+            transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+        }
+
+        .social-media-list li:hover a {
+            /* color: black; */
+            color: #fff;
+        }
+
+        .copyright {
+            font: 200 14px 'Oswald', sans-serif;
+            color: black;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-left: -280px
+        }
+
+        hr {
+            border-color: black;
+            margin-left: -100px;
+            margin-right: 200px;
+
+
+        }
+
+        /* Begin Media Queries*/
+        @media screen and (max-width: 850px) {
+            .contact-wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .direct-contact-container,
+            .form-horizontal {
+                margin: 0 auto;
+
+            }
+
+            .direct-contact-container {
+                margin-top: 90px;
+                max-width: 300px;
+            }
+
+            .social-media-list li {
+                height: 60px;
+                width: 60px;
+                line-height: 60px;
+
+            }
+
+            .social-media-list li:after {
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+
+            }
+        }
+
+        @media screen and (max-width: 569px) {
+
+            .direct-contact-container,
+            .form-wrapper {
+                float: none;
+                margin: 0 auto;
+            }
+
+            .form-control,
+            textarea {
+
+                margin: 0 auto;
+            }
+
+
+            .name,
+            .email,
+            textarea {
+                width: 280px;
+            }
+
+            .direct-contact-container {
+                margin-top: 90px;
+                max-width: 300px;
+
+
+            }
+
+            .social-media-list {
+                margin-left: -380px
+            }
+
+            .social-media-list li {
+                height: 55px;
+                width: 55px;
+                line-height: 55px;
+                font-size: 2rem;
+
+            }
+
+            .social-media-list li:after {
+                width: 55px;
+                height: 55px;
+                line-height: 55px;
+
+            }
+
+        }
+
+        @media screen and (max-width: 410px) {
+            .send-button {
+                width: 99%;
+            }
+        }
+
+        .h1 {
+            margin-left: -250px;
+            font: 100 30px 'Oswald', sans-serif;
+            letter-spacing: 1.9px;
+        }
+
+
+        .border {
+
+            background-color: beige;
+            height: 300px;
+            justify-content: end;
+            background: url("https://suryatextiles.com/images/contact-us-banner.jpg");
+            background-repeat: no-repeat;
+
+            text-align: center;
+            text-decoration: solid;
+        }
+
+        .p {
+            margin-left: -190px;
+            letter-spacing: 0.1px;
+            font-size: small;
+        }
+
+        .para {
+            text-align: center;
+            font: 700 15px 'Lato', sans-serif;
+            letter-spacing: 5.9px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+     <!-- Top Header & Navigation Ends Here -->
+    <div class="container-fluid bg-dark">
+
+        <div class="container text-light">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item ms-3 ">
+                                <a class="nav-link" href="/TodayInWorld.html">TODAY IN WORLD</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link" href="../Business Page/Business.html">BUSINESS</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link" href="../Entertainment Page/Entertainment.html">ENTERTAINMENT</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link" href="../Sports Page/Sports.html">SPORTS</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link" href="../About-Us-Page/7 index.html">ABOUT US</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link" href="../Contact Page/Contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="login_sUp justify-content-end mt-3">
+                        <a href="/Assets/SignUpPage/animatedsignup.html">
+                            <p><i class="fa-solid fa-user-group text-light me-2"></i> SIGN IN </p>
+                        </a>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Top Header & Navigation Ends Here -->
+    
+        <div class="border">
+            
+                <h1 class="section-header">Contact Us</h1>
+                <p class=" para">"Stay connected withus! Feel I free to send us a message to get in touch. We're here
+                    and
+                    eagerly waiting to answer your questions and inquiries. Share your thoughts and suggestions with us.
+                    We're
+                    here to help!" </p>
+            </div>
+            <section id="contact " class="mt-5">
+
+                <div class="contact-wrapper">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-sm-5 col-md-6">
+
+                                <div class="direct-contact-container">
+                                    <h1 class="h1">Submit A Request</h1>
+                                    <p class="p">"To submit a request, You can simply fill out the form on our website
+                                        or send
+                                        us an email with the detail of your request."</p>
+                                    <ul class="contact-list">
+                                        <div class="container text-center">
+                                            <div class="row row-cols-1 row-cols-lg-2 g-1 g-lg-1 ">
+                                                <div class="col">
+                                                    <div class="p-1">
+                                                        <li class="list-item"><i
+                                                                class="fa-solid fa-location-dot fa-2xl"></i><span
+                                                                class="contact-text place"><a href="mailto:#"
+                                                                    title="Reach To Us">Our
+                                                                    Location</a></span></i></li>
+                                                        <p class="Timing">Jl. Sunset Road, Kuta</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="p-1">
+                                                        <li class="list-item"><i class="fa fa-phone fa-2x"><span
+                                                                    class="contact-text phone"><a
+                                                                        href="tel:1-212-555-5555"
+                                                                        title="Give me a call">Phone
+                                                                        Number</a></span></i>
+                                                        </li>
+                                                        <p class="Timing">(+62) 8132 521 438</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="p-1">
+                                                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span
+                                                                    class="contact-text gmail"><a href="mailto:#"
+                                                                        title="Send me an email">Our
+                                                                        Email</a></span></i></li>
+                                                        <p class="Timing">Aptech.apk@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="p-1">
+                                                        <li class="list-item"><i
+                                                                class="fa-regular fa-clock fa-2xl"></i><span
+                                                                class="contact-text gmail"><a href="mailto:#"
+                                                                    title="Avilable Timing">Open
+                                                                    Hours</a></span></i></li>
+                                                        <p class="Timing"> Mon-Fri : 08:30-16:00</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <ul class="social-media-list">
+                                    <a href="https://web.whatsapp.com/" target="_blank" class="contact-icon">
+                                        <li> <i class="fa-brands fa-whatsapp"></i></li>
+                                    </a>
+
+                                    <a href="https://www.facebook.com/" target="_blank" class="contact-icon">
+                                        <li><i class="fa-brands fa-facebook"></i></li>
+                                    </a>
+
+                                    <a href="https://www.youtube.com/" target="_blank" class="contact-icon">
+                                        <li> <i class="fa-brands fa-youtube"></i></li>
+                                    </a>
+
+                                    <a href="https://github.com/" target="_blank" class="contact-icon">
+                                        <li><i class="fa-brands fa-github"></i></li>
+                                    </a>
+
+                                </ul>
+                                <hr>
+
+                                <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+                            </div>
+
+                            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+
+                                <form id="contact-form" class="form-horizontal" role="form">
+
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" id="name" placeholder="NAME"
+                                                name="name" value="" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-12 mt-3">
+                                            <input type="email" class="form-control" id="email" placeholder="EMAIL"
+                                                name="email" value="" required>
+                                        </div>
+                                    </div>
+
+                                    <textarea class="form-control mt-3" rows="10" placeholder="MESSAGE" name="message"
+                                        required></textarea>
+
+                                    <button class="btn btn-danger send-button" id="submit" type="submit" value="SEND">
+                                        <div class="alt-send-button">
+                                            <i class="fa fa-paper-plane"></i><span class="send-text">SEND MESSAGE</span>
+                                        </div>
+
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+           
+    </div>
+
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.905291049429!2d115.17865479999999!3d-8.7005438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd246cbb03c6125%3A0xb16c7dc5d9237394!2sJl.%20Sunset%20Road%2C%20Bali%2080361%2C%20Indonesia!5e0!3m2!1sen!2s!4v1698911057294!5m2!1sen!2s"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+</div>
+<!-- footer Ends Here  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.querySelector('#contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            e.target.elements.name.value = '';
+            e.target.elements.email.value = '';
+            e.target.elements.message.value = '';
+
+        });
+    </script>
+</body>
+
+</html>

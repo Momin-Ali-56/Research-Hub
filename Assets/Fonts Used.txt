@@ -1,0 +1,5 @@
+top header font: heebo
+
+main heading & headings: "Hind Vadodara"
+
+body text: "barlow" 

@@ -1,0 +1,584 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+p,
+span {
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Header CSS StartS */
+
+.top-header-right {
+    font-family: 'Heebo', sans-serif;
+    /* font-weight: 300; */
+}
+
+.top-header-social {
+    font-size: 18px;
+}
+
+.top-header-social i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    /* color: red; */
+    margin-left: 10px;
+    text-align: center;
+}
+
+.navbar ul li a {
+    color: white;
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.navbar ul li a:hover {
+    color: white;
+    /* background-color: red; */
+    border-bottom: 2px red solid;
+}
+
+.login_sUp p {
+
+    font-family: 'Hind Vadodara', sans-serif;
+    /* padding-bottom: 10px; */
+}
+
+.login_sUp i {
+
+    font-size: 20px;
+}
+
+.login_sUp a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.login_sUp p:hover {
+
+    color: white;
+    /* background-color: red; */
+    border-bottom: 2px red solid;
+    /* padding-bottom: 50px; */
+}
+
+/* Header CSS Ends */
+
+/* Hero Section Css starts Here */
+
+
+
+.hero_Sect {
+
+    width: 100%;
+    height: 130vh;
+    /* background-color: brown; */
+    background: linear-gradient(rgba(15, 23, 43, 0.658), rgba(15, 23, 43, 0.678)), url('Images/Web-Banner.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* .hero-text h1{
+
+    position: relative;
+    border-left: 4px solid red;
+    
+    padding-left: 20px;
+    color: white;
+    top: 350px;
+    font-family: 'Hind Vadodara', sans-serif;
+    width: 80%;
+    font-weight: 600;
+
+} */
+
+/* Hero Section Left side */
+
+.hero-text {
+    position: relative;
+    top: 450px;
+    /* width: 80%; */
+    /* background-color: red; */
+}
+
+
+#news_cate {
+
+    background-color: red;
+    width: 145px;
+    font-family: 'Barlow', sans-serif;
+    border: none;
+
+}
+
+.hero-text h1 {
+
+    border-left: 4px solid red;
+    padding-left: 20px;
+    font-family: 'Hind Vadodara', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+    /* width: 80%; */
+}
+
+.hero-text h6 {
+
+    color: white;
+    padding-left: 25px;
+    font-family: 'Barlow', sans-serif;
+    /* border-left: 4px solid gold; */
+
+}
+
+
+.hero-text p {
+    color: white;
+    padding-left: 25px;
+    font-family: 'Barlow', sans-serif;
+    /* border-left: 4px solid gold; */
+}
+
+/* hero section left side ends Here! */
+
+/* hero right sect */
+
+.box {
+
+    width: 100%;
+    background-color: black;
+    height: auto;
+    position: relative;
+    top: 100px;
+    opacity: 0.8;
+}
+
+.box h4 {
+
+    color: white;
+    /* opacity: 1; */
+}
+
+/* .hero_News img{
+
+    width: 200ps;
+    height: 100%;
+} */
+
+.hero_News h6 {
+    color: white;
+}
+
+.hero_News p {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* hero section right ends Here! */
+
+/* Hero section Emds Here */
+
+
+/* gpt code here  */
+
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    .hero_Sect {
+        height: auto;
+        padding-bottom: 150px;
+        /* Adjust height as needed */
+    }
+
+    .hero-text {
+        top: 100px;
+        /* Adjust position */
+    }
+
+    .box {
+        display: none;
+        height: auto;
+        /* Adjust height as needed */
+    }
+
+    /* Add more adjustments as needed for smaller screens */
+}
+
+
+
+
+/* gpt code end here */
+
+/* Featured section Starts Here */
+
+.featured_Sect {
+
+    margin-top: 100px;
+}
+
+#featured_Sect_head {
+
+    width: 165px;
+    background-color: red;
+    color: white;
+    /* font-family: 'Hind Vadodara', sans-serif; */
+    font-weight: 600;
+}
+
+.featured_Sect_heading {
+
+    border-bottom: 1px solid lightgray;
+}
+/* 
+.news1 a {
+
+    text-decoration: none;
+    color: red;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 600;
+} */
+
+
+.news_img_2 {
+
+    background-image: url('Images/Featured\ img2.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.news2 h5 {
+    font-size: 16px;
+}
+
+.news2 a {
+    text-decoration: none;
+    color: red;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.news_img_3 {
+
+    background-image: url('Images/Featured img3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.news3 a {
+    text-decoration: none;
+    color: red;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.news_img_4 {
+
+    background-image: url('Images/Featured img4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Featured section ends Here */
+
+.black_Sect {
+
+    padding-top: 100px;
+    padding-bottom: 80px;
+
+}
+
+.black_Sect a {
+
+    text-decoration: none;
+    color: red;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 425px) {
+
+    .black_Sect {
+        /* Example adjustment: reduce the padding for black_Sect */
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+}
+
+/* black section ends Here */
+
+/* latest post section starts here  */
+
+/* left side */
+.news_Sect {
+
+    padding-top: 100px;
+
+}
+
+.latest_Post_Heading {
+
+    border-bottom: 1px solid lightgray;
+}
+
+#latest_News_hding {
+
+    width: 117px;
+    background-color: red;
+    color: white;
+    /* font-family: 'Hind Vadodara', sans-serif; */
+    font-weight: 600;
+}
+
+/* Right side */
+
+#Popular_News_hding {
+
+    width: 130px;
+    background-color: red;
+    color: white;
+    /* font-family: 'Hind Vadodara', sans-serif; */
+    font-weight: 600;
+
+}
+
+.Popular_News_hding {
+
+    border-bottom: 1px solid lightgray;
+}
+
+.popular_News1 {
+
+    background-image: url('Images/Bomb-news2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 125px;
+    /* width: 150px; */
+    /* width: auto; */
+}
+
+.popular_News2 {
+
+    background-image: url('Images/china-btm-News.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 125px;
+    /* width: 150px; */
+    /* width: auto; */
+}
+
+.popular_News3 {
+
+    background-image: url('Images/X-Btm-News.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 125px;
+    /* width: 150px; */
+    /* width: auto; */
+}
+
+.popular_News4 {
+
+    background-image: url('Images/OpenAi-Btm.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 125px;
+    /* width: 150px; */
+    /* width: auto; */
+}
+
+#category_hding {
+
+    width: 100px;
+    background-color: red;
+    color: white;
+    /* font-family: 'Hind Vadodara', sans-serif; */
+    font-weight: 600;
+}
+
+.category_list ul li {
+
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.pagination ul li {
+    border: none;
+    color: grey;
+}
+
+
+
+.page-link {
+    border: none;
+    color: grey;
+}
+
+
+/* latest post section ends here  */
+
+@media only screen and (max-width: 767px) {
+    /* .featured_Sect_News {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .news1,
+    .news2,
+    .col-md-3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .news2 {
+        margin-top: 20px;
+        /* Adjust margin as needed */
+    }
+
+    .news_img_2,
+    .news_img_3,
+    .news_img_4 {
+        /* width: 94%; */
+        width: 50%;
+        height: 300px;
+        /* Adjust height as needed */
+        background-size: cover;
+        background-position: center;
+    }
+
+
+}
+
+/* 3 News Section Starts Here  */
+
+#today_News_hding {
+
+    width: 160px;
+    background-color: red;
+    color: white;
+    /* font-family: 'Hind Vadodara', sans-serif; */
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#buss_News_hding {
+
+    width: 100px;
+    background-color: red;
+    color: white;
+    /* font-family: 'Hind Vadodara', sans-serif; */
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#sports_News_hding {
+
+    width: 90px;
+    background-color: red;
+    color: white;
+    /* font-family: 'Hind Vadodara', sans-serif; */
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.today_News_hding {
+
+    border-bottom: 1px solid lightgray;
+}
+
+/* 3 News Section ends Here  */
+
+
+/* Today In World Page Css */
+
+.Today_news_Sect {
+
+    padding-top: 50px;
+
+}
+
+#Tdy_In_Wld {
+
+    width: 220px;
+    background-color: red;
+    color: white;
+    /* font-family: 'Hind Vadodara', sans-serif; */
+    font-weight: 600;
+}
+/* 
+.cate_TdyWorld a{
+
+    text-decoration: none;
+    color: red;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+} */
+
+/* Today In World Page Css */
+
+.footer_margin {
+
+    margin-top: 70px;
+
+}
+
+.footer_category {
+
+    margin-top: 70px;
+}
+
+.news_head{
+
+    text-decoration: none;
+    color: black;
+} 
+
+.news_head:hover{
+
+    text-decoration: none;
+    color: black;
+}
+
+.black_Sect_Head {
+    text-decoration: none;
+}
+
+.rd_more{
+
+    text-decoration: none;
+    color: red;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 600;
+}
